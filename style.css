@@ -1,0 +1,61 @@
+#back
+{
+    background-color: rgba(99, 111, 116, 0.6);
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-left: 1px solid #14141f;
+    border-right: 1px solid #14141f;
+    box-shadow: 0px 0px 60px #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#container
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #b32400;
+}
+#title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1000px;
+    height: 100px;
+    font-size: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #b32400;
+    margin-left: auto;
+    margin-right: auto;
+}
+#choose
+ {
+     width: 1000px;
+     border-bottom: 2px solid #b32400;
+ }
+#view
+{
+    width: 1000px;
+    border-bottom: 2px solid #b32400;
+
+}
+#menu
+{
+    width: 1000px;
+    border-bottom: 2px solid #b32400;
+}
+#canvas2
+{
+    visibility: hidden;
+}
+#canvas
+{
+    padding: 0;
+    margin: auto;
+    display: block;
+}

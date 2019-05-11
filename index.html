@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+    <script src="file:///Users/karolzebrowski/IdeaProjects/Grafika_7/filters.js"></script>
+    <script src="https://www.marvinj.org/releases/marvinj-0.7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="back">
+    <div id="container">
+        <div id="title">
+            <a>Image Filters</a>
+        </div>
+        <div id="choose">
+            <input type='file' onchange="readURL(this);" />
+            <img id="image" src="#" style="visibility: hidden;" onchange="colorFilter(0, 0, 0);"/>
+        </div>
+        <div id="view">
+            <canvas id="canvas" width="786" height="480"></canvas>
+        </div>
+        <div id="menu">
+            <button onclick="colorFilter(0, 0, 0);">Original image</button>
+            <button onclick="colorFilter(0, -255, -255);">Red filter</button>
+            <button onclick="colorFilter(-255, 0, -255);">Green filter</button>
+            <button onclick="colorFilter(-255, -255, 0);">Blue filter</button>
+            <button onclick="invert();">Negative</button>
+            <button onclick="gray();">Gray Scale</button>
+            <button onclick="brightness();">Brighten</button>
+            <button onclick="contrast();">Contrast</button>
+            <button onclick="wycz();">Clear</button>
+            <a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a>
+        </div>
+
+    </div>
+</div>
+<canvas id="canvas2" ></canvas>
+</body>
+</html>
