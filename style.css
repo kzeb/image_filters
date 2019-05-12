@@ -52,6 +52,7 @@
 #canvas2
 {
     visibility: hidden;
+    display: none;
 }
 #canvas
 {
